@@ -1,37 +1,32 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import Styles from '../styles/welcome.module.css';
+import Header from './header';
+import MainButtonsNav from './mainButtonsNav';
 
 export default function Welcome() {
   const [attribute, setAttribute] = useState(Styles.mainContainer);
+  const [attribute2, setAttribute2] = useState(Styles.hrStyle);
+  const [renderButtons, setRenderButtons] = useState(false);
   const [intro, setIntro] = useState('Bem vindo');
 
-  const navigate = useNavigate();
-
   useEffect(() => {
-    setTimeout(() => {
-      setTimeout(() => setIntro('Welcome'), 2000);
-      setTimeout(() => setIntro('Bienvenido'), 3000);
-      setTimeout(() => setIntro('Bienvenue'), 3500);
-      setTimeout(() => setIntro('Willkommen'), 4300);
-      setTimeout(() => setIntro('いらっしゃいませ'), 5100);
-    }, 1000);
-  }, []);
-
-  useEffect(() => {
-    setTimeout(() => setAttribute(Styles.mainContainerOut), 5500);
-  }, []);
-
-  useEffect(() => {
-    setTimeout(() => navigate('/portfolio'), 7000);
+    setTimeout(() => setIntro('Welcome'), 2500);
+    setTimeout(() => setIntro('Bienvenido'), 3500);
+    setTimeout(() => setIntro('Bienvenue'), 4000);
+    setTimeout(() => setIntro('Willkommen'), 4500);
+    setTimeout(() => setIntro('いらっしゃいませ'), 5000);
+    setTimeout(() => setIntro(<Header />), 5500);
+    setTimeout(() => setAttribute(Styles.openHeader), 5400);
+    setTimeout(() => setAttribute2(Styles.hiddenH1), 5400);
+    setTimeout(() => setRenderButtons(true), 10000);
   }, []);
 
   const fadeIn = () => (
-    <>
-      <hr className={Styles.hrStyle} />
-      <h1>{intro}</h1>
-      <hr className={Styles.hrStyle} />
-    </>
+    <div className={Styles.sizeFont}>
+      <hr className={attribute2} />
+      {intro}
+      <hr className={attribute2} />
+    </div>
   );
 
   return (
@@ -39,6 +34,11 @@ export default function Welcome() {
       {
         fadeIn()
       }
+      <div className={Styles.mainButtonsNav}>
+        {
+        renderButtons && <MainButtonsNav />
+        }
+      </div>
     </div>
   );
 }

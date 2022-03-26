@@ -1,0 +1,15 @@
+"filename", "language", "JavaScript", "CSS", "comment", "blank", "total"
+"/home/igor/Documents/Trybe/Programação/Projetos pessoais/portfolio/front-end/src/App.js", "JavaScript", 18, 0, 0, 3, 21
+"/home/igor/Documents/Trybe/Programação/Projetos pessoais/portfolio/front-end/src/components/header.js", "JavaScript", 9, 0, 0, 2, 11
+"/home/igor/Documents/Trybe/Programação/Projetos pessoais/portfolio/front-end/src/components/mainButtonsNav.js", "JavaScript", 22, 0, 0, 3, 25
+"/home/igor/Documents/Trybe/Programação/Projetos pessoais/portfolio/front-end/src/components/portfolioContainer.js", "JavaScript", 127, 0, 2, 12, 141
+"/home/igor/Documents/Trybe/Programação/Projetos pessoais/portfolio/front-end/src/components/welcome.js", "JavaScript", 40, 0, 0, 5, 45
+"/home/igor/Documents/Trybe/Programação/Projetos pessoais/portfolio/front-end/src/context/cmiContext.js", "JavaScript", 3, 0, 0, 3, 6
+"/home/igor/Documents/Trybe/Programação/Projetos pessoais/portfolio/front-end/src/context/cmiProvider.js", "JavaScript", 26, 0, 0, 7, 33
+"/home/igor/Documents/Trybe/Programação/Projetos pessoais/portfolio/front-end/src/index.css", "CSS", 0, 87, 3, 12, 102
+"/home/igor/Documents/Trybe/Programação/Projetos pessoais/portfolio/front-end/src/index.js", "JavaScript", 10, 0, 0, 2, 12
+"/home/igor/Documents/Trybe/Programação/Projetos pessoais/portfolio/front-end/src/pages/mainPage.js", "JavaScript", 7, 0, 0, 2, 9
+"/home/igor/Documents/Trybe/Programação/Projetos pessoais/portfolio/front-end/src/pages/portfolio.js", "JavaScript", 14, 0, 0, 2, 16
+"/home/igor/Documents/Trybe/Programação/Projetos pessoais/portfolio/front-end/src/styles/portfolio.module.css", "CSS", 0, 112, 0, 14, 126
+"/home/igor/Documents/Trybe/Programação/Projetos pessoais/portfolio/front-end/src/styles/welcome.module.css", "CSS", 0, 137, 0, 15, 152
+"Total", "-", 276, 336, 5, 82, 699

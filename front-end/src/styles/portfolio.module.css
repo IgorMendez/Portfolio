@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,200&display=swap");
+
+.mainPortContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 680px;
+}
+
+.midContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 90%;
+  gap: 200px;
+}
+
+.ProjectContainer {
+  height: 100%;
+  overflow: hidden;
+  width: 40%;
+  border-radius: 10%;
+  border: 1px solid var(--color1);
+}
+
+.pClass {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgb(209, 208, 208);
+  height: 50px;
+  margin: 0;
+  font-size: 20px;
+}
+
+.projectRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 1%;
+  height: 30px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--color2);
+  font-size: 15px;
+}
+
+.projectRow:hover {
+  background-color: burlywood;
+  color: black;
+  animation: fadein 1s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.projectsContainer {
+  text-align: center;
+}
+
+.ulNav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  top: 0;
+  gap: 2%;
+}
+
+.cta {
+  position: relative;
+  transition: all 0.2s ease;
+  border-radius: 100px;
+  margin: 10px;
+  padding: 5px;
+  width: 170px;
+  background: none;
+  color: wheat;
+}
+
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  width: 30px;
+  height: 100%;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.cta span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  color: white;
+  border: none;
+}
+
+.cta:hover:before {
+  width: 100%;
+  border: none;
+  background: rgb(139, 104, 38);
+}

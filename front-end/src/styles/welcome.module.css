@@ -20,8 +20,7 @@
 .mainContainerOut {
   display: flex;
   justify-content: center;
-  height: 500px;
-  padding-top: 20%;
+  height: 400px;
   width: 100%;
   color: wheat;
   animation: fadeout 5s;
@@ -40,7 +39,113 @@
   border: none;
   background-color: wheat;
   color: wheat;
-  width: 10%;
-  height: 2px;
+  width: 200px;
+  height: 1px;
   margin: 40px 13px 20px 13px;
+}
+
+.openHeader {
+  position: absolute;
+  animation: toGrow ease-in 8s forwards;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+@keyframes toGrow {
+  0% {
+    transform: translateY(-50%);
+    top: 40%;
+    width: 400px;
+  }
+  10% {
+    top: 40%;
+    transform: translateY(-50%);
+  }
+  40% {
+    top: 0%;
+    transform: translateY(0);
+  }
+  45% {
+    top: 0%;
+    transform: translateY(0);
+    width: 400px;
+  }
+  75% {
+    width: 100vw;
+  }
+  100% {
+    width: 100vw;
+  }
+}
+
+.hiddenH1 {
+  display: none;
+  width: 0;
+  height: 0;
+  margin: 0;
+}
+
+.sizeFont {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+}
+
+.mainButtonsNav {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  width: 400px;
+  height: 400px;
+  margin-top: 200px;
+  margin-left: -200px;
+  top: 50%;
+  left: 50%;
+}
+
+.buttonNavMain {
+  margin: 10px;
+  width: 200px;
+  height: 40px;
+  animation: forwards fadein 5s;
+}
+
+.buttonNavMain {
+  position: relative;
+  transition: all 0.2s ease;
+  border-radius: 100px;
+  margin: 10px;
+  padding: 5px;
+  background: none;
+  color: wheat;
+}
+
+.buttonNavMain:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  width: 30px;
+  height: 100%;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.buttonNavMain span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  color: white;
+  border: none;
+}
+
+.buttonNavMain:hover:before {
+  width: 100%;
+  border: none;
+  background: rgb(139, 104, 38);
 }

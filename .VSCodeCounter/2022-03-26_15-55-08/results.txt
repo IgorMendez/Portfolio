@@ -1,0 +1,54 @@
+Date : 2022-03-26 15:55:08
+Directory : /home/igor/Documents/Trybe/Programação/Projetos pessoais/portfolio/front-end
+Total : 19 files,  28073 codes, 28 comments, 120 blanks, all 28221 lines
+
+Languages
++--------------------+------------+------------+------------+------------+------------+
+| language           | files      | code       | comment    | blank      | total      |
++--------------------+------------+------------+------------+------------+------------+
+| JSON               |          3 |     27,379 |          0 |          3 |     27,382 |
+| CSS                |          3 |        336 |          3 |         41 |        380 |
+| JavaScript         |         10 |        276 |          2 |         41 |        319 |
+| Markdown           |          1 |         38 |          0 |         33 |         71 |
+| JSON with Comments |          1 |         24 |          0 |          1 |         25 |
+| HTML               |          1 |         20 |         23 |          1 |         44 |
++--------------------+------------+------------+------------+------------+------------+
+
+Directories
++-------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                              | files      | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                 |         19 |     28,073 |         28 |        120 |     28,221 |
+| public                                                                                                            |          2 |         45 |         23 |          2 |         70 |
+| src                                                                                                               |         13 |        612 |          5 |         82 |        699 |
+| src/components                                                                                                    |          4 |        198 |          2 |         22 |        222 |
+| src/context                                                                                                       |          2 |         29 |          0 |         10 |         39 |
+| src/pages                                                                                                         |          2 |         21 |          0 |          4 |         25 |
+| src/styles                                                                                                        |          2 |        249 |          0 |         29 |        278 |
++-------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-------------------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| filename                                                                                                          | language           | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| /home/igor/Documents/Trybe/Programação/Projetos pessoais/portfolio/front-end/.eslintrc.json                       | JSON with Comments |         24 |          0 |          1 |         25 |
+| /home/igor/Documents/Trybe/Programação/Projetos pessoais/portfolio/front-end/README.md                            | Markdown           |         38 |          0 |         33 |         71 |
+| /home/igor/Documents/Trybe/Programação/Projetos pessoais/portfolio/front-end/package-lock.json                    | JSON               |     27,299 |          0 |          1 |     27,300 |
+| /home/igor/Documents/Trybe/Programação/Projetos pessoais/portfolio/front-end/package.json                         | JSON               |         55 |          0 |          1 |         56 |
+| /home/igor/Documents/Trybe/Programação/Projetos pessoais/portfolio/front-end/public/index.html                    | HTML               |         20 |         23 |          1 |         44 |
+| /home/igor/Documents/Trybe/Programação/Projetos pessoais/portfolio/front-end/public/manifest.json                 | JSON               |         25 |          0 |          1 |         26 |
+| /home/igor/Documents/Trybe/Programação/Projetos pessoais/portfolio/front-end/src/App.js                           | JavaScript         |         18 |          0 |          3 |         21 |
+| /home/igor/Documents/Trybe/Programação/Projetos pessoais/portfolio/front-end/src/components/header.js             | JavaScript         |          9 |          0 |          2 |         11 |
+| /home/igor/Documents/Trybe/Programação/Projetos pessoais/portfolio/front-end/src/components/mainButtonsNav.js     | JavaScript         |         22 |          0 |          3 |         25 |
+| /home/igor/Documents/Trybe/Programação/Projetos pessoais/portfolio/front-end/src/components/portfolioContainer.js | JavaScript         |        127 |          2 |         12 |        141 |
+| /home/igor/Documents/Trybe/Programação/Projetos pessoais/portfolio/front-end/src/components/welcome.js            | JavaScript         |         40 |          0 |          5 |         45 |
+| /home/igor/Documents/Trybe/Programação/Projetos pessoais/portfolio/front-end/src/context/cmiContext.js            | JavaScript         |          3 |          0 |          3 |          6 |
+| /home/igor/Documents/Trybe/Programação/Projetos pessoais/portfolio/front-end/src/context/cmiProvider.js           | JavaScript         |         26 |          0 |          7 |         33 |
+| /home/igor/Documents/Trybe/Programação/Projetos pessoais/portfolio/front-end/src/index.css                        | CSS                |         87 |          3 |         12 |        102 |
+| /home/igor/Documents/Trybe/Programação/Projetos pessoais/portfolio/front-end/src/index.js                         | JavaScript         |         10 |          0 |          2 |         12 |
+| /home/igor/Documents/Trybe/Programação/Projetos pessoais/portfolio/front-end/src/pages/mainPage.js                | JavaScript         |          7 |          0 |          2 |          9 |
+| /home/igor/Documents/Trybe/Programação/Projetos pessoais/portfolio/front-end/src/pages/portfolio.js               | JavaScript         |         14 |          0 |          2 |         16 |
+| /home/igor/Documents/Trybe/Programação/Projetos pessoais/portfolio/front-end/src/styles/portfolio.module.css      | CSS                |        112 |          0 |         14 |        126 |
+| /home/igor/Documents/Trybe/Programação/Projetos pessoais/portfolio/front-end/src/styles/welcome.module.css        | CSS                |        137 |          0 |         15 |        152 |
+| Total                                                                                                             |                    |     28,073 |         28 |        120 |     28,221 |
++-------------------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
