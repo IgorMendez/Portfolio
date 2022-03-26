@@ -1,14 +1,18 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import Styles from '../styles/welcome.module.css';
 
-export default function MainButtonsNav() {
+export default function MainButtonsNav({ hiddenPort, hiddenBack }) {
   const navigate = useNavigate();
 
   return (
     <div>
-      <button onClick={() => navigate('/portfolio')} className={Styles.buttonNavMain} type="button">
+      <button hidden={hiddenPort} onClick={() => navigate('/portfolio')} className={Styles.buttonNavMain} type="button">
         <span>Portfolio</span>
+      </button>
+      <button hidden={hiddenBack} onClick={() => navigate('/')} className={Styles.buttonNavMain} type="button">
+        <span>Voltar</span>
       </button>
       <button onClick={() => window.open('https://www.linkedin.com/in/igormm/', '_blank')} className={Styles.buttonNavMain} type="button">
         <span>LinkedIn</span>
@@ -22,3 +26,8 @@ export default function MainButtonsNav() {
     </div>
   );
 }
+
+MainButtonsNav.propTypes = {
+  hiddenPort: PropTypes.bool.isRequired,
+  hiddenBack: PropTypes.bool.isRequired,
+};

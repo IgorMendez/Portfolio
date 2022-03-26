@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,200&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,200&display=swap");
 
 .mainPortContainer {
   display: flex;
@@ -16,7 +15,7 @@
   align-items: center;
   width: 80%;
   height: 90%;
-  gap: 200px;
+  gap: 50px;
 }
 
 .ProjectContainer {
@@ -38,16 +37,22 @@
   font-size: 20px;
 }
 
+.pClass2 {
+  color: rgb(209, 208, 208);
+  height: 100px;
+}
+
 .projectRow {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   cursor: pointer;
-  margin-top: 1%;
+  margin-top: 0.8%;
   height: 30px;
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 600;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 500;
   text-transform: uppercase;
   color: var(--color2);
   font-size: 15px;
@@ -123,4 +128,19 @@
   width: 100%;
   border: none;
   background: rgb(139, 104, 38);
+}
+
+.containerButtonsInPort {
+  width: 300px;
+}
+
+.gifAvaliz {
+  margin-top: 10px;
+  width: 300px;
+}
+
+.modalPopUp {
+  position: fixed;
+  left: 200px;
+  width: 400px;
 }

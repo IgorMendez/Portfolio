@@ -3,12 +3,15 @@
 import React, { useContext, useEffect, useState } from 'react';
 import Styles from '../styles/portfolio.module.css';
 import cmiContext from '../context/cmiContext';
+import MainButtonsNav from './mainButtonsNav';
+import AvalizGif from '../media/avaliz.gif';
 
 export default function PortfolioContainer() {
   const context = useContext(cmiContext);
   const [front, setFront] = useState(true);
   const [back, setBack] = useState();
   const [cs, setCs] = useState();
+  const [modalOn, setModelOn] = useState(true);
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
@@ -16,6 +19,10 @@ export default function PortfolioContainer() {
       setProjects(context.projects);
     }
   }, [context]);
+
+  // useEffect(() => {
+  //   document.getElementById('portfolio').setAttribute('hidden', true);
+  // }, []);
 
   function frontProjectsRender() {
     return projects.map((project, index) => {
@@ -132,9 +139,29 @@ export default function PortfolioContainer() {
           {cs && csProjectsRender()}
         </div>
       </div>
-      <div className={Styles.ProjectContainer}>
-        <p className={Styles.pClass}>Projetos Pessoais</p>
+      <div className={Styles.containerButtonsInPort}>
+        <MainButtonsNav hiddenPort />
       </div>
+      <div className={Styles.ProjectContainer}>
+        <p className={Styles.pClass2}>Projetos Pessoais</p>
+        <hr />
+        <span
+          onClick={() => setModelOn(false)}
+          role="button"
+          tabIndex={0}
+        >
+          <img className={Styles.gifAvaliz} src={AvalizGif} alt="gif de aplicação" />
+        </span>
+      </div>
+      <span
+        className={Styles.modalPopUp}
+        onClick={() => setModelOn(true)}
+        role="button"
+        hidden={modalOn}
+        tabIndex={0}
+      >
+        <img src={AvalizGif} alt="gif de aplicação" />
+      </span>
     </section>
   );
 }

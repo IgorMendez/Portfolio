@@ -36,7 +36,8 @@ export default function Welcome() {
       }
       <div className={Styles.mainButtonsNav}>
         {
-        renderButtons && <MainButtonsNav />
+        // eslint-disable-next-line react/jsx-boolean-value
+        renderButtons && <MainButtonsNav hiddenBack />
         }
       </div>
     </div>
