@@ -1,0 +1,46 @@
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  padding-top: 20%;
+  width: 100%;
+  color: wheat;
+  animation: fadein 5s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.mainContainerOut {
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  padding-top: 20%;
+  width: 100%;
+  color: wheat;
+  animation: fadeout 5s;
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.hrStyle {
+  border: none;
+  background-color: wheat;
+  color: wheat;
+  width: 10%;
+  height: 2px;
+  margin: 40px 13px 20px 13px;
+}
