@@ -1,146 +1,310 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,200&display=swap");
 
-.mainPortContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  width: 100%;
-  height: 680px;
-}
-
-.midContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-  height: 90%;
-  gap: 50px;
-}
-
-.ProjectContainer {
-  height: 100%;
-  overflow: hidden;
-  width: 40%;
-  border-radius: 10%;
-  border: 1px solid var(--color1);
-}
-
-.pClass {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: rgb(209, 208, 208);
-  height: 50px;
-  margin: 0;
-  font-size: 20px;
-}
-
-.pClass2 {
-  color: rgb(209, 208, 208);
-  height: 100px;
-}
-
-.projectRow {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  cursor: pointer;
-  margin-top: 0.8%;
-  height: 30px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-weight: 500;
-  text-transform: uppercase;
-  color: var(--color2);
-  font-size: 15px;
-}
-
-.projectRow:hover {
-  background-color: burlywood;
-  color: black;
-  animation: fadein 1s;
-}
-
-@keyframes fadein {
-  from {
-    opacity: 0;
+@media screen and (max-width: 799px) and (min-width: 0px) {
+  .mainPortContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    height: 700px;
+    min-height: 800px;
+    position: absolute;
   }
-  to {
-    opacity: 0.5;
+
+  .midContainer {
+    display: flex;
+    top: auto;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 90%;
+    gap: 10px;
+    position: absolute;
   }
-  to {
-    opacity: 1;
+
+  .containerButtonsInPort {
+    top: -6.5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: absolute;
+  }
+
+  .containerButtonsInPort > div > button {
+    width: auto;
+  }
+
+  .ProjectContainer {
+    height: 100%;
+    top: 9.5%;
+    position: relative;
+    overflow: hidden;
+    width: 50%;
+    border-radius: 3%;
+    border: 1px solid var(--color1);
+  }
+
+  .pClass {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(209, 208, 208);
+    height: 50px;
+    margin: 0;
+    font-size: 20px;
+  }
+
+  .pClass2 {
+    color: rgb(209, 208, 208);
+    height: 100px;
+  }
+
+  .projectRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    height: 30px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--color2);
+    font-size: 15px;
+  }
+
+  .projectRow:hover {
+    background-color: burlywood;
+    color: black;
+    animation: fadein 1s;
+  }
+
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 0.5;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .projectsContainer {
+    text-align: center;
+  }
+
+  .ulNav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    top: 0;
+    gap: 2%;
+  }
+
+  .cta {
+    position: relative;
+    transition: all 0.2s ease;
+    border-radius: 100px;
+    margin: 10px;
+    word-break: break-all;
+    padding: 5px;
+    width: auto;
+    background: none;
+    color: wheat;
+  }
+
+  .cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    width: 30px;
+    height: 100%;
+    transition: all 0.3s ease;
+    border: none;
+  }
+
+  .cta span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    color: white;
+    border: none;
+  }
+
+  .cta:hover:before {
+    width: 100%;
+    border: none;
+    background: rgb(139, 104, 38);
+  }
+
+  .gifAvaliz {
+    margin-top: 10px;
+    width: 100px;
+  }
+
+  .modalPopUp {
+    position: fixed;
+    left: 200px;
+    width: 400px;
   }
 }
 
-.projectsContainer {
-  text-align: center;
-}
+@media screen and (min-width: 800px) {
+  .mainPortContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    height: 680px;
+  }
 
-.ulNav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  flex-wrap: wrap;
-  top: 0;
-  gap: 2%;
-}
+  .midContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 90%;
+    gap: 50px;
+  }
 
-.cta {
-  position: relative;
-  transition: all 0.2s ease;
-  border-radius: 100px;
-  margin: 10px;
-  padding: 5px;
-  width: 170px;
-  background: none;
-  color: wheat;
-}
+  .ProjectContainer {
+    height: 100%;
+    overflow: hidden;
+    width: 40%;
+    border-radius: 3%;
+    border: 1px solid var(--color1);
+  }
 
-.cta:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 10px;
-  width: 30px;
-  height: 100%;
-  transition: all 0.3s ease;
-  border: none;
-}
+  .pClass {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(209, 208, 208);
+    height: 50px;
+    margin: 0;
+    font-size: 20px;
+  }
 
-.cta span {
-  position: relative;
-  font-family: "Ubuntu", sans-serif;
-  font-size: 14px;
-  letter-spacing: 0.05em;
-  color: white;
-  border: none;
-}
+  .pClass2 {
+    color: rgb(209, 208, 208);
+    height: 100px;
+  }
 
-.cta:hover:before {
-  width: 100%;
-  border: none;
-  background: rgb(139, 104, 38);
-}
+  .projectRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 0.8%;
+    height: 30px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--color2);
+    font-size: 15px;
+  }
 
-.containerButtonsInPort {
-  width: 300px;
-}
+  .projectRow:hover {
+    background-color: burlywood;
+    color: black;
+    animation: fadein 1s;
+  }
 
-.gifAvaliz {
-  margin-top: 10px;
-  width: 100px;
-}
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 0.5;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 
-.modalPopUp {
-  position: fixed;
-  left: 200px;
-  width: 400px;
+  .projectsContainer {
+    text-align: center;
+  }
+
+  .ulNav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    top: 0;
+    gap: 2%;
+  }
+
+  .cta {
+    position: relative;
+    transition: all 0.2s ease;
+    border-radius: 100px;
+    margin: 10px;
+    padding: 5px;
+    width: 170px;
+    background: none;
+    color: wheat;
+  }
+
+  .cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    width: 30px;
+    height: 100%;
+    transition: all 0.3s ease;
+    border: none;
+  }
+
+  .cta span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    color: white;
+    border: none;
+  }
+
+  .cta:hover:before {
+    width: 100%;
+    border: none;
+    background: rgb(139, 104, 38);
+  }
+
+  .containerButtonsInPort {
+    width: 300px;
+  }
+
+  .gifAvaliz {
+    margin-top: 10px;
+    width: 100px;
+  }
+
+  .modalPopUp {
+    position: fixed;
+    left: 200px;
+    width: 400px;
+  }
 }

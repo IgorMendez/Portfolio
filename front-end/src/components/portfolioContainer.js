@@ -140,7 +140,7 @@ export default function PortfolioContainer() {
         </div>
       </div>
       <div className={Styles.containerButtonsInPort}>
-        <MainButtonsNav hiddenPort />
+        <MainButtonsNav hiddenPort hiddenBack={false} />
       </div>
       <div className={Styles.ProjectContainer}>
         <p className={Styles.pClass2}>Projetos Pessoais</p>
