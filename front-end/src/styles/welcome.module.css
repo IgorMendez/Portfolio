@@ -46,7 +46,7 @@
 
 .openHeader {
   position: absolute;
-  animation: toGrow ease-in 8s forwards;
+  animation: toGrow ease-in 5s forwards;
   margin-left: auto;
   margin-right: auto;
   left: 0;
@@ -111,7 +111,7 @@
   width: 200px;
   height: 40px;
   cursor: pointer;
-  animation: forwards fadein 5s;
+  animation: forwards fadein 1s;
 }
 
 .buttonNavMain {
