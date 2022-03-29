@@ -1,0 +1,20 @@
+.curriculoContainer {
+  position: absolute;
+  left: 150px;
+  margin-left: -150px;
+}
+
+.curriculo {
+  height: 1000px;
+}
+
+.me {
+  width: 180px; /* width of container */
+  height: 180px; /* height of container */
+  object-fit: cover;
+  position: absolute;
+  z-index: 99;
+  border-radius: 10px;
+  border: 2px solid;
+  top: 50%;
+}

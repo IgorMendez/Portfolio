@@ -145,6 +145,14 @@ export default function PortfolioContainer() {
       <div className={Styles.ProjectContainer}>
         <p className={Styles.pClass2}>Projetos Pessoais</p>
         <hr />
+        <div
+          className={Styles.projectRow}
+          tabIndex="0"
+          role="button"
+          onClick={() => { window.open('https://github.com/IgorMendez/Trybe/tree/master/Projetos/ProjetosPessoais/avaliz', '_blank'); }}
+        >
+          Avaliz
+        </div>
         <span
           onClick={() => setModelOn(false)}
           role="button"

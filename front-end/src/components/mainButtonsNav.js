@@ -12,7 +12,10 @@ export default function MainButtonsNav({ hiddenPort, hiddenBack }) {
         <span>Portfolio</span>
       </button>
       <button hidden={hiddenBack} onClick={() => navigate('/')} className={Styles.buttonNavMain} type="button">
-        <span>Voltar</span>
+        <span>Home</span>
+      </button>
+      <button onClick={() => navigate('/curriculo')} className={Styles.buttonNavMain} type="button">
+        <span>Curriculo</span>
       </button>
       <button onClick={() => window.open('https://www.linkedin.com/in/igormm/', '_blank')} className={Styles.buttonNavMain} type="button">
         <span>LinkedIn</span>

@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7e71ce50.css",
+    "main.js": "/static/js/main.f7480506.js",
+    "static/media/avaliz.gif": "/static/media/avaliz.4e787db79eb51f75aac6.gif",
+    "static/media/logo.png": "/static/media/logo.e816742aa0717e40ce10.png",
+    "index.html": "/index.html",
+    "main.7e71ce50.css.map": "/static/css/main.7e71ce50.css.map",
+    "main.f7480506.js.map": "/static/js/main.f7480506.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7e71ce50.css",
+    "static/js/main.f7480506.js"
+  ]
+}

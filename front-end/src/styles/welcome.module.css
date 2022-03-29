@@ -110,6 +110,7 @@
   margin: 10px;
   width: 200px;
   height: 40px;
+  cursor: pointer;
   animation: forwards fadein 5s;
 }
 
